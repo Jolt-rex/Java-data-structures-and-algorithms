@@ -1,10 +1,15 @@
 import java.util.Arrays;
-import java.util.Stack;
 
 public class Main {
-    public static void main(String[] args) {
-        var reverser = new StringReverser();
+        public static void main(String[] args) {
+        Stack stack = new Stack(6);
 
-        System.out.println(reverser.reverse("hobosaurus"));
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+
+        System.out.println(stack);
+
     }
 }
