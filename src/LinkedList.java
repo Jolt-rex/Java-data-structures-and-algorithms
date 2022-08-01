@@ -170,4 +170,22 @@ public class LinkedList {
 
         return a.value;
     }
+
+    public void printMiddleNode() {
+        if(first == null || first == last) return;
+
+        var a = first;
+        var b = first;
+        while(b != last) {
+            if(b.next.next == null) {
+                System.out.println(a.value + " " + a.next.value);
+                return;
+            }
+            else {
+                b = b.next.next;
+                a = a.next;
+            }
+        }
+        System.out.println(a.value);
+    }
 }
