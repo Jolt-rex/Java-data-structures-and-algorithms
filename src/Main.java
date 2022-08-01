@@ -2,14 +2,18 @@ import java.util.Arrays;
 
 public class Main {
         public static void main(String[] args) {
-        Stack stack = new Stack(6);
+        DoubleStack ds = new DoubleStack(6);
 
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
-        stack.push(40);
+        System.out.println(ds);
 
-        System.out.println(stack);
+        ds.push1(10);
+        ds.push2(50);
+        ds.push1(20);
+        ds.push2(60);
+        ds.push1(30);
+
+        System.out.println(ds);
+
 
     }
 }
