@@ -33,5 +33,17 @@ public class DoubleStack {
         items[items.length - ++secondCount] = item;
     }
 
+    public int pop1() {
+        if(firstCount == 0)
+            throw new IllegalStateException();
 
+        return items[--firstCount];
+    }
+
+    public int pop2() {
+        if(secondCount == 0)
+            throw new IllegalStateException();
+
+        return items[items.length - secondCount--];
+    }
 }
